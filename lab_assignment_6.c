@@ -3,6 +3,11 @@
 
 int search(int numbers[], int low, int high, int value) 
 {
+	if(high==low) {
+		if(numbers[low]==value)
+			return low;
+	return -1;
+	}
 	if(high >= low) {
 
 		int mid = low + (high-low) / 2;
